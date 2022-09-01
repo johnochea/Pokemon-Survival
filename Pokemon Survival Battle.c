@@ -5,20 +5,20 @@
 #include <math.h>
 
 typedef struct Player{
-    char name[15];
-    char type[15];
+    char name[15]; // name of character (Bulbasaur, Charmander, Squirtle, Eevee)
+    char type[15]; // pokemon type (fire, water, grass, normal)
     char skillName[25];
     char line[150];
     int stats[2]; //index 0 = hp, index 1 = dmg, index 3 = leer, index 4 = harden
-    float stats2[2];
+    float stats2[2]; //stats that include evasion, extra dmg, and extra defense
     int skillLvl;
-    int stun;
+    int stun; // flag for being stunned
 }Player;
 
 typedef struct Enemy{
     char name[20];
     char type[15];
-    char skill1[15];
+    char skill1[15]; // name of Enemy skill
     char skill2[15];
     char skill3[15];
     char skill4[15];
@@ -48,14 +48,14 @@ void gameOver(int);
 
 int main(){
 	int menuChoice = 5, back, score, exit = 0;
-    char backFlag;
+	char backFlag;
     Player player;
     Enemy enemy;
     
     srand(time(NULL));
     //flow
     do{
-    system("cls");
+    system("cls"); //clears the console
     printIntro();
 
     do{
