@@ -3,8 +3,8 @@
 
 This project is made by a group of BS Computer Science freshies of UP Cebu, namely:
 
-Awatin, Gabriel Howard
-Manayon, Kyle Alan
+Awatin, Gabriel Howard -
+Manayon, Kyle Alan -
 Ochea, John Oliver
 
 in the culmination of our learnings from the subject CMSC 21.
